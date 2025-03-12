@@ -1,0 +1,9 @@
+#!name=SoundCloud Go+ Unlock  
+#!desc=Unlocks SoundCloud Go+ features  
+# Converted from Loon .plugin to Surge .sgmodule  
+
+[MITM]  
+hostname = %APPEND% soundcloud.com, api.soundcloud.com  
+
+[Script]  
+SoundCloud Go+ Unlock = type=http-response, pattern=^https:\/\/api\.soundcloud\.com\/.*$, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/skidofficial/scpro/refs/heads/main/soundcloud.js
