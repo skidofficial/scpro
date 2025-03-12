@@ -1,0 +1,9 @@
+﻿#!name=soundcloud go+ [fixed by skid]
+#!desc=free soundcloud yurrrrrrrrr
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/soundcloud.png
+#!homepage=https://caca.net
+#!author=skid
+[Script]
+http-response https://api-mobile.soundcloud.com/configuration/ios script-path=https://raw.githubusercontent.com/skidofficial/scpro/refs/heads/main/soundcloud.js,requires-body=1,max-size=0,tag=soundcloud pro
+[MITM]
+hostname = api-mobile.soundcloud.com
